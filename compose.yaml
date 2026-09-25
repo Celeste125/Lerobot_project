@@ -1,0 +1,10 @@
+services:
+  lerobot:
+    build: .
+    image: lerobot-so101:0.1
+    working_dir: /workspace
+    volumes:
+      - .:/workspace
+    gpus: all
+    stdin_open: true
+    tty: true
