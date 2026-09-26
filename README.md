@@ -11,7 +11,12 @@ Proyecto colaborativo para aprender imitation learning con dos brazos SO-101 y L
 
 ## Inicio rápido
 
-Construir la imagen:
+Desde `Lerobot_project/`:
 
 ```bash
-docker compose build
+make build   # construir la imagen
+make shell   # entrar al contenedor (bash)
+make down    # parar el contenedor
+```
+
+Equivalente sin Make: `docker compose build` / `docker compose run --rm lerobot bash`.
